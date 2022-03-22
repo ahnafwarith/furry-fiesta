@@ -1,4 +1,5 @@
 import React from 'react';
+import { addToDb } from '../../utilities/fakedb'
 import './Cosmetic.css'
 
 const Cosmetic = (props) => {
@@ -8,7 +9,7 @@ const Cosmetic = (props) => {
 
 
     const addToCart = (id) => {
-        localStorage.setItem(id, name);
+        addToDb(id);
     }
 
     const addParamToCart = () => addToCart(id);
