@@ -8,7 +8,7 @@ const Cosmetic = (props) => {
 
 
     const addToCart = (id) => {
-        console.log('Item Added', id);
+        localStorage.setItem(id, name);
     }
 
     const addParamToCart = () => addToCart(id);
